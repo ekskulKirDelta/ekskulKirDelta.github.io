@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0bfdcb7.css",
+    "main.js": "/static/js/main.b15356c8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sertif1.webp": "/static/media/sertif1.5d229da350c6871b1a97.webp",
+    "static/media/sertif2.webp": "/static/media/sertif2.807ff733127e641366d0.webp",
+    "static/media/round.png": "/static/media/round.3ae8b95568f9737890bc.png",
+    "static/media/pattern.png": "/static/media/pattern.322704a0a7b603360d6d.png",
+    "static/media/anggota.png": "/static/media/anggota.65afbdae6b08aa18c430.png",
+    "static/media/sertif4.webp": "/static/media/sertif4.db09c8644c22fdaffe51.webp",
+    "static/media/sertif3.webp": "/static/media/sertif3.b245ea46e7f23d6728eb.webp",
+    "static/media/scientist.svg": "/static/media/scientist.9aaff8b295818349474927a894eda263.svg",
+    "static/media/chemistry.svg": "/static/media/chemistry.b5796518f5f27bd9865e161234ea85e3.svg",
+    "static/media/logo.svg": "/static/media/logo.fdd432b1e7f6bc976ceb77801061a8f7.svg",
+    "static/media/wave.svg": "/static/media/wave.8df7bb94a873bdd57f65.svg",
+    "static/media/background-main.svg": "/static/media/background-main.a8fa9285033817dc1b88.svg",
+    "static/media/icons8-instagram.svg": "/static/media/icons8-instagram.19e9d08c10f4177387b45eaf91768e73.svg",
+    "static/media/chevron.svg": "/static/media/chevron.51ed2cfa1d6adcc55ad6d444cc883ca0.svg",
+    "static/media/icons8-facebook.svg": "/static/media/icons8-facebook.cc3136465e455d3b2fbf37edce5beac4.svg",
+    "index.html": "/index.html",
+    "static/media/blob.svg": "/static/media/blob.f9bf213d8d2f0e4fd1e9.svg",
+    "main.a0bfdcb7.css.map": "/static/css/main.a0bfdcb7.css.map",
+    "main.b15356c8.js.map": "/static/js/main.b15356c8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0bfdcb7.css",
+    "static/js/main.b15356c8.js"
+  ]
+}
