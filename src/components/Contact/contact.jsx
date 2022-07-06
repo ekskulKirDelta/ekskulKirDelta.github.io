@@ -64,7 +64,7 @@ export default function Contact() {
               <input type="text" name="kelas" required placeholder="kelas" />
             </div>
             <div className="input">
-              <input type="text" name="absen" placeholder="No Absen" />
+              <input type="text" name="subject" placeholder="Subject" />
             </div>
             <div className="input">
               <textarea
