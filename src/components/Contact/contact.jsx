@@ -9,52 +9,76 @@ import Footer2 from "../footer2/footer2";
 import scientist from "../pict/chemistry.svg";
 
 // ! Import NodeModule
-import { Component } from "react";
 import AOS from "aos";
+import emailjs from "emailjs-com";
 
-export default class contact extends Component {
-  componentDidMount() {
-    AOS.init();
+export default function Contact() {
+  AOS.init();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_yuaym3i",
+        "template_0plrpd9",
+        e.target,
+        "v-Shx8BqnvFM8C7Kn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      e.target.reset();
   }
 
-  render() {
-    return (
-      <section className="contact">
-        <Header2></Header2>
-        <div className="contacts">
-          <div className="card">
-            <div className="imgBx">
-              <img src={scientist} alt="" />
-            </div>
-            <form
-              action="submit"
-              data-aos="zoom-in"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-            >
-              <div className="input">
-                <input type="text" name="nama" required placeholder="Nama" autoFocus/>
-              </div>
-              <div className="input">
-                <input type="text" name="kelas" required placeholder="Kelas" />
-              </div>
-              <div className="input">
-                <input type="text" name="absen" placeholder="No Absen" />
-              </div>
-              <div className="input">
-                <textarea
-                  name="nama"
-                  rows="8"
-                  required
-                  placeholder="Apa yang ingin anda sampaikan?"
-                ></textarea>
-              </div>
-              <button type="submit">Submit</button>
-            </form>
+  return (
+    <section className="contact">
+      <Header2></Header2>
+      <div className="contacts">
+        <div className="card">
+          <div className="imgBx">
+            <img src={scientist} alt="" />
           </div>
+          <form
+            action="submit"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            onSubmit={sendEmail}
+          >
+            <div className="input">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Nama"
+                autoFocus
+              />
+            </div>
+            <div className="input">
+              <input type="text" name="kelas" required placeholder="kelas" />
+            </div>
+            <div className="input">
+              <input type="text" name="absen" placeholder="No Absen" />
+            </div>
+            <div className="input">
+              <textarea
+                name="message"
+                rows="8"
+                required
+                placeholder="Apa yang ingin anda sampaikan?"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <Footer2></Footer2>
-      </section>
-    );
-  }
+      </div>
+      <Footer2></Footer2>
+    </section>
+  );
 }
