@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&display=swap');
+
+
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.head {
+    width: 70vw;
+    border-bottom: 3px solid #008000;
+    padding: 0 0 10px 0;
+}
+
+.head h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+.content {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../pict/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+    box-shadow: inset 0 -20px 20px rgba(0, 0, 0, 0.288);
+}
+
+.content h1 {
+    font-size: 4vw;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 30px rgb(71, 71, 71);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: textAnim 1s forwards 0.5s;
+}
+
+.content h1 span {
+    animation: shadow 0.5s forwards 1.5s;
+}
+
+.anggota {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.anggota .head h1 {
+    margin-top: 20px;
+}
+
+.anggota .body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anggota .pictAnggota {
+    width: 50%;
+}
+
+.anggota .pictAnggota img {
+    width: 100%;
+    height: auto;
+}
+
+.anggota .capt {
+    padding: 0 30px;
+    width: 50%;
+    text-align: justify;
+}
+
+.anggota .capt p {
+    height: 80%;
+    font-size: 1.5vw;
+    font-family: "QuickSand", sans-serif;
+    font-weight: bold;
+}
+
+.kegiatan {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kegiatan .head {
+    margin-bottom: 50px;
+}
+
+.kegiatan .body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.kegiatan .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    min-height: 40vh;
+    padding: 0 20px;
+}
+
+.kegiatan .top {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #008000;
+}
+
+.kegiatan .bottom {
+    font-family: "QuickSand", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 50%;
+}
+
+.prestasi {
+    text-align: center;
+
+    width: 100vw;
+    min-height: 40vh;
+
+    background: rgb(4, 73, 4);
+    box-shadow: 0px -15px 20px rgba(0, 0, 0, 0.288), 0px 15px 20px rgba(0, 0, 0, 0.288);
+    padding: 20px;
+}
+
+.prestasi .head {
+    margin: 30px auto 50px;
+}
+
+.prestasi .head h1 {
+    color: #f5f5f5;
+}
+
+.prestasi img {
+    width: 40vw;
+    height: auto;
+}
+
+.swiper-container {
+    width: 500px;
+}
+
+.swiper-wrapper {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+
+
+.about {
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../pict/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .img {
+    width: 40%;
+    text-align: center;
+    background: url(../pict/blob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about .img img {
+    width: 50%;
+    height: auto;
+}
+
+.about .capt {
+    width: 50%;
+    padding: 30px;
+    background-color: #f5f5f5;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.274);
+    border: 5px solid #f5f5f5;
+    border-radius: 15px 0 0;
+}
+
+.about .capt p {
+    font-size: 1.4vw;
+    font-family: "QuickSand", sans-serif;
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes shadow {
+    to {
+        color: #03c04b;
+        text-shadow: 3px 3px #9cf58a;
+    }
+}
+
+/* Media Queries */
+
+/* ! Tablet */
+@media only screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 8vw;
+    }
+
+    .head h1 {
+        font-size: 8vw;
+    }
+
+    .anggota .body {
+        flex-direction: column;
+    }
+
+    .kegiatan .body {
+        flex-direction: column;
+    }
+
+    .anggota .pictAnggota {
+        width: 90%;
+    }
+
+    .anggota .capt {
+        width: 80%;
+    }
+
+    .anggota .capt p {
+        font-size: 4.7vw;
+        text-align: center;
+    }
+
+    
+    .kegiatan .card {
+        width: 75vw;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .kegiatan .head {
+        margin: 50px 0;
+    }
+
+    .kegiatan .card p {
+        font-size: 4.7vw;
+    }
+
+    .prestasi img {
+        width: 90vw;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 30px;
+        row-gap: 30px;
+    }
+
+    .about .img {
+        width: 100%;
+    }
+
+    .about .capt {
+        width: 100%;
+    }
+
+    .about .capt p {
+        font-size: 4.7vw;
+    }
+
+    footer .item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .item .logo {
+        text-align: center;
+    }
+
+    footer .item .logo img {
+        width: 130px;
+    }
+
+    footer .item .dev h3 {
+        text-align: center;
+    }
+}

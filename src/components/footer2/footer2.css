@@ -1,0 +1,35 @@
+footer {
+    width: 100vw;
+    min-height: 20vh;    
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.301);    
+
+    background: url(../pict/round.png);
+    background-position: top -300px left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    width: 100vw;
+    min-height: 20vh;
+}
+
+footer .logo img {
+    width: 15vw;
+    height: auto;
+}
+
+footer .dev span {
+    color: red;
+    font-size: 1.2em;
+}

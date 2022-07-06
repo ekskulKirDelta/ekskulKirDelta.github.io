@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #0aab2c;
+}
+
+.mains {
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100vw;
+    min-height: 74vh;
+    z-index: 1;
+}
+
+.main h1 {
+    opacity: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    transform: translateX(-10%);
+    animation: textAnim 1s forwards;
+}
+
+.main h1 span {
+    color: var(--primary-color);
+}
+
+.button-bar {
+    opacity: 0;
+    transform: translateX(-10%);
+    margin-top: 30px;
+    display: flex;
+    column-gap: 5px;
+    animation: textAnim 1s forwards 0.5s;
+}
+
+.button-bar a.start {
+    width: 145px;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.button-bar a.start:hover {
+    width: 160px;
+}
+
+img.icon {
+    transition: transform 0.5s ease;
+}
+
+.button-bar a:hover img.icon {
+    transform: rotate(30deg);
+}
+
+/** Animation */
+@keyframes textAnim {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/** Media Query */
+
+/** Media Query Tablet */
+@media only screen and (max-width: 780px){
+    .main {
+        min-height: 76vh;
+    }
+}
+
+/** Media Query Iphone 8*/
+@media only screen and (max-width: 480px) {
+    .main h1 {
+        font-size: 2.5em;
+    }    
+}
+
+/** Media Query Iphone 5s */
+@media only screen and (max-width: 320px) {
+
+}

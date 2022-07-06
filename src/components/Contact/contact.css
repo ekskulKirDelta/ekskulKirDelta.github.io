@@ -1,0 +1,149 @@
+.contact {
+    background-image: url(../pict/round.png);
+    width: 100vw;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacts {
+    width: 100vw;
+    min-height: 70vh;
+
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contacts .card {
+    width: 90vw;
+    min-height: 60vh;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .card .imgBx {
+    width: 50%;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .card img {
+    width: 100%;
+    height: auto;
+}
+
+.contacts .card form {
+    width: 50%;
+    min-height: 60vh;
+    background-color: #10be278c;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-radius: 15px;
+
+    row-gap: 20px;
+}
+
+.contacts .card form .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.contacts .card form .input input,
+.contacts .card form .input textarea {
+    width: 100%;
+    border-radius: 7.5px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-family: "QuickSand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid rgb(6, 138, 39);
+}
+
+.contacts .card form .input textarea {
+    resize: none;
+    padding: 5px 5px;
+}
+
+.contacts .card form .input input {    
+    height: 4vh;
+}
+
+.contacts .card form .input input::placeholder,
+.contacts .card form .input textarea::placeholder {
+    transition: transform .5s ease;
+}
+
+.contacts .card form .input input:focus::placeholder,
+.contacts .card form .input textarea:focus::placeholder {
+    transform: translateY(-100px);
+}
+
+.contacts .card form .input label {
+    font-family: "QuickSand",sans-serif;
+    font-weight: 900;
+}
+
+.contacts .card form button {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    font-family: "Reem Kufi", sans-serif;
+    border-radius: 7.5px;
+    border: 1px solid #000;
+    outline: none;
+    transition: border .5s ease, color .5s ease;
+    cursor: pointer;
+}
+
+.contacts .card form button:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+/* MEdia Queries */
+
+@media only screen and (max-width: 768px) {
+    .contact .card {
+        flex-direction: column;
+    }
+
+    .contact .card .imgBx {
+        width: 100%;
+    }
+
+    .contact .card form {
+        width: 100%;
+    }
+}
