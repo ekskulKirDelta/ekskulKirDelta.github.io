@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { Component } from "react";
 
 export default class Header2 extends Component {
-    componentDidMount(){
-        let hamburger = document.querySelector("header nav .hamburger");
-        let ul = document.querySelector("header nav ul")
+  componentDidMount() {
+    let header = document.querySelector(".header2");
+    let hamburger = document.querySelector("header nav .hamburger");
+    let ul = document.querySelector("header nav ul");
 
-        // * membuat fungsi saat hamburger di click menu akan muncul
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active')
-            ul.classList.toggle('active')
-        });
-    }
+    // * membuat fungsi saat hamburger di click menu akan muncul
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      ul.classList.toggle("active");
+      header.classList.toggle('actived')
+    });
+  }
 
   render() {
     return (
